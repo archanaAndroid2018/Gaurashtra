@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\71058d923a85b396f9065d71ae985c1a\\jetified-payumoney-sdk-7.6.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\cd4fd02ba7323b7c0580579e2a9de1b9\\jetified-plug-n-play-1.6.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,163,211,266,321,368",
+                        "endColumns": "57,49,47,54,54,46,60",
+                        "endOffsets": "108,158,206,261,316,363,424"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\649e80ba6c514053d02a7c156f7a628d\\jetified-payumoney-sdk-7.6.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -37,16 +47,6 @@
                         "endLines": "15",
                         "endColumns": "13",
                         "endOffsets": "798"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\1a3c0e61971b7dceb272b97a624f914d\\jetified-plug-n-play-1.6.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,113,163,211,266,321,368",
-                        "endColumns": "57,49,47,54,54,46,60",
-                        "endOffsets": "108,158,206,261,316,363,424"
                     }
                 }
             ]

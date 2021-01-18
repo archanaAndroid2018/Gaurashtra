@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
                     "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\7c54f9cbc7613c04d2439059be46c3f0\\appcompat-1.1.0\\res\\values-v26\\values-v26.xml",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\323124563906b4630cc45641466e19ba\\jetified-upisdk-1.0.2\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\4af45b01edcb088d4b3834bd6a98d3c4\\jetified-upisdk-1.0.2\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

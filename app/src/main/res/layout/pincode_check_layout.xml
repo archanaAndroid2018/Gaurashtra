@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:id="@+id/pincode_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detailtabbag"
+        android:orientation="vertical">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1.5dp"-->
+<!--            android:layout_marginRight="@dimen/margin5"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@color/gray"></LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height20"
+            android:layout_marginTop="@dimen/margin20"
+            android:layout_marginRight="@dimen/height20"
+            android:layout_marginBottom="@dimen/margin20"
+            android:background="@drawable/detailtabbag"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/et_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:background="@null"
+                android:digits="@string/digits_pincode"
+                android:gravity="left|center"
+                android:hint="Enter Pincode"
+                android:inputType="textCapCharacters"
+                android:maxLength="7"
+                android:paddingLeft="@dimen/height20"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_btn_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height40"
+                android:layout_gravity="center"
+                android:layout_weight="1.7"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/height20"
+                    android:layout_height="@dimen/height20"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_tick_icon" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_below="@+id/pincode_container"
+            android:id="@+id/tv_not_found_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height20"
+            android:layout_marginRight="@dimen/height20"
+            android:layout_marginBottom="@dimen/height20"
+            android:background="@drawable/light_red_bg"
+            android:paddingLeft="@dimen/height30"
+            android:paddingRight="@dimen/height30"
+            android:paddingBottom="@dimen/margin5"
+            android:text="error message"
+            android:textColor="@android:color/holo_red_dark"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

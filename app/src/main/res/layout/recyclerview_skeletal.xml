@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="@dimen/margin10"
+    android:layout_marginBottom="@dimen/margin10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        app:cardCornerRadius="@dimen/margin5"
+        android:elevation="@dimen/margin10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin10"
+            android:background="@color/cardbg">
+            <ProgressBar
+                android:layout_width="@dimen/height40"
+                android:layout_height="@dimen/height40"
+                android:layout_gravity="center"
+                android:indeterminate="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height20"
+            android:background="@color/cardbg"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin10"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="@dimen/height20"
+            android:background="@color/cardbg"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin10"/>
+    </androidx.cardview.widget.CardView>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:animateLayoutChanges="true">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            app:cardCornerRadius="@dimen/margin5"
+            android:elevation="@dimen/margin10">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin10"
+                android:background="@color/cardbg">
+                <ProgressBar
+                    android:layout_width="@dimen/height40"
+                    android:layout_height="@dimen/height40"
+                    android:layout_gravity="center"
+                    android:indeterminate="true" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height20"
+                android:background="@color/cardbg"
+                android:layout_marginTop="140dp"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin10"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="@dimen/height20"
+                android:background="@color/cardbg"
+                android:layout_marginTop="170dp"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin10"/>
+        </androidx.cardview.widget.CardView>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginRight="@dimen/margin10"-->
+<!--        android:layout_weight="1"-->
+<!--        android:elevation="@dimen/margin10"-->
+<!--        app:cardCornerRadius="@dimen/margin5">-->
+
+<!--        <ProgressBar-->
+<!--            android:layout_width="@dimen/height40"-->
+<!--            android:layout_height="@dimen/height40"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:indeterminate="true" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+</LinearLayout>

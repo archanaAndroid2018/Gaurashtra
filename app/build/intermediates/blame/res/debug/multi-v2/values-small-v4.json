@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\ff87a0ef09a23649d346ff57c7fd78e4\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",

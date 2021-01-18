@@ -1,0 +1,63 @@
+<resources>
+    <string name="facebook_app_id">294139534442614</string>
+    <string name="fb_login_protocol_scheme">fb294139534442614</string>
+    <string name="app_name">Gaurashtra</string>
+    <string name="account_have">Have an account?</string>
+    <string name="sign">Sign In</string>
+    <string name="full_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="confirmPass">Confirm Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="otp">One Time Password</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="reg_button">SIGN UP</string>
+    <string name="submit">SUBMIT</string>
+    <string name="rupee">\u20B9</string>
+
+    <string name="emailId">Email ID</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="capsforgot">FORGOT PASSWORD?</string>
+    <string name="capsResetPass">RESET PASSWORD</string>
+    <string name="dont_account">Don&#8217;t have an account?</string>
+    <string name="sup">Sign Up</string>
+    <string name="orlogin">OR LOGIN WITH</string>
+    <string name="home_text1">Free shipping for orders above Rs 700</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="description">GoSeva Aloevera Hair Sampoo comes with the great benefits of Aloevera
+    , The natural ingredients in aloevera helps in nursing hair roots and reduce hair fall.Useful in dryness
+    &amp; roughness of hair.Prevent hair fall &amp; improve hair shine.</string>
+
+    <string name="home">About Us</string>
+    <string name="contact">Contact Us</string>
+    <string name="share">Terms &amp; Conditions</string>
+    <string name="privacyp">Privacy Policy</string>
+    <string name="edit">Notifications</string>
+    <string name="become">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="offers">Offers</string>
+    <string name="refund_cancellation">Refund &amp; Cancellation Policy</string>
+
+    <string name="pref_file">algosoft.com.gaurashtra.pref_file</string>
+    <string name="user_mobile">algosoft.com.gaurashtra.userMobile</string>
+    <string name="customerId">algosoft.com.gaurashtra.customerId</string>
+    <string name="userMail">algosoft.com.gaurashtra.userMail</string>
+    <string name="digits_pincode">ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</string>
+    <string name="view_all_review">View more</string>
+    <string name="option_available">Options</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_internet_connectivity">Please check your internet connectivity!</string>
+
+
+    <string name="notify_text">Fill your email below and we will notify </string>
+    <string name="rzp_apikey">rzp_live_tNlHeOfmNqgtwO</string>
+    <string name="rzp_secret">mhYVUT0aVZSQ7UFWs9rgB0u8</string>
+    <string name="update_downloaded">Updated version available on playstore, please update this app for best experience.</string>
+    <string name="restart">Update</string>
+    <string name="pay_err_msg">Looks like the payment didn\'t go through successfully. You may try to pay again or If the payment has debited your bank account then please report to our support team.</string>
+
+
+</resources>

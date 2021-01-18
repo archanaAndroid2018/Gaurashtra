@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/wv_track_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40">
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/height30"
+            android:layout_height="@dimen/height30"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/close"/>
+    </RelativeLayout>
+</FrameLayout>
+</LinearLayout>

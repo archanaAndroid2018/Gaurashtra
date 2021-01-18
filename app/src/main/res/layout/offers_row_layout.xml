@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin10"
+    android:layout_marginRight="@dimen/margin10"
+    android:layout_marginTop="@dimen/margin10"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/icon_offer"
+        android:layout_width="@dimen/height25"
+        android:layout_height="@dimen/height25"
+        android:src="@drawable/ic_offer"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:tint="@color/blue"/>
+
+    <TextView
+        android:id="@+id/tv_offer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:text="Offer Title One"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/icon_offer"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10" />
+
+    <TextView
+        android:id="@+id/tv_offer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_offer_title"
+        android:textColor="@color/light_black"
+        android:layout_toRightOf="@+id/icon_offer"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginBottom="@dimen/margin5"
+        android:text="@string/lorem"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/right_arrow"
+        android:layout_width="@dimen/height25"
+        android:layout_height="@dimen/height25"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_rightarrow"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:tint="@color/black"/>
+
+</RelativeLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="@color/gray"/>
+</LinearLayout>

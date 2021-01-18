@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_to_be_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin5">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pb_to_be_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/frame_no_review"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center_vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_empty_order"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:textColor="@color/cards_number_textColor"
+            android:text="Oops! No order available for review."
+            />
+        <TextView
+            android:id="@+id/tv_btn_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:paddingRight="@dimen/height30"
+            android:paddingLeft="@dimen/height30"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:text="Continue Shopping"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dimen_18sp"
+            android:background="@drawable/blue_outline_box"/>
+    </FrameLayout>
+</RelativeLayout>

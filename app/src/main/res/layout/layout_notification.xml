@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:card_view="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="2dp"
+android:background="@color/review_box">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineAmbientShadowColor="@color/white"
+    android:outlineSpotShadowColor="@color/white"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/shine"
+        android:padding="5dp">
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+           <androidx.cardview.widget.CardView
+               android:id="@+id/icon"
+               app:cardBackgroundColor="@color/blue"
+               android:layout_width="wrap_content"
+               app:cardCornerRadius="@dimen/margin50"
+               android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/margin50"
+                android:layout_margin="@dimen/dimen_2dp">
+            <ImageView
+                android:layout_width="@dimen/height40"
+                android:layout_height="@dimen/height40"
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/img_icon"/>
+            </androidx.cardview.widget.CardView>
+           </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icon"
+                android:layout_marginEnd="@dimen/margin10"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_marginStart="@dimen/margin5"
+                android:layout_centerInParent="true"
+                android:text="Title"
+                android:gravity="start|center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/ibtn_delete"
+                android:layout_width="@dimen/height40"
+                android:layout_height="@dimen/dimen_40dp"
+                android:src="@drawable/ic_action_delete"
+                android:background="@color/white"
+                android:tint="@color/blue"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_layout"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/height30"
+            android:text="Notification title, really long text for texting.Notification title, really long text for texting.Notification title, really long text for texting.Notification title, really long text for texting.Notification title, really long text for texting."
+            android:textColor="@color/colorPrimary"
+            android:textSize="13dp" />
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20/09/1990"
+            android:textColor="@color/actionbar_background"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/dimen_12sp"
+            android:gravity="right"
+            android:layout_below="@+id/tv_content"
+            android:layout_marginTop="@dimen/margin10"></TextView>
+    </RelativeLayout>
+    <!--            </RelativeLayout>-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentRight="true"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:layout_marginTop="60dp"-->
+    <!--                android:layout_marginRight="5dp">-->
+
+    <!--            </ImageView>-->
+
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="20/09/1990"-->
+    <!--                android:textColor="@color/colorPrimary"-->
+    <!--                android:layout_marginBottom="10dp"-->
+    <!--                android:layout_marginRight="10dp"-->
+    <!--                android:textSize="13dp"-->
+    <!--                android:layout_alignParentRight="true"-->
+    <!--                android:layout_marginTop="100dp"></TextView>-->
+    <!--        </RelativeLayout>-->
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

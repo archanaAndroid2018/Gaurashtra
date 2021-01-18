@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_one"
+        android:enabled="true"
+        android:icon="@mipmap/ic_home"
+        android:title="Home"
+        android:iconTint="@color/graylight"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/action_two"
+        android:enabled="true"
+        android:icon="@mipmap/bottomcat"
+        android:title="Categories"
+        android:iconTint="@color/graylight"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_three"
+        android:enabled="true"
+        android:icon="@mipmap/bottomuser"
+        android:iconTint="@color/graylight"
+        android:title="Me"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_five"
+        android:enabled="true"
+        android:icon="@mipmap/bottomsearch"
+        android:title="Search"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_four"
+        android:enabled="true"
+        android:icon="@mipmap/ic_cart_dark_outline"
+        android:title="Cart"
+        android:visible="true"
+        android:iconTint="@color/graylight"
+        app:showAsAction="always"
+        app:actionLayout="@layout/cart_icon_layout"/>
+
+</menu>

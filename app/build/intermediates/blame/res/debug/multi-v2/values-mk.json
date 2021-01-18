@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\38ee8c616f0b6fe6e919f532a81a9d67\\jetified-firebase-messaging-20.2.2\\res\\values-mk\\values.xml",

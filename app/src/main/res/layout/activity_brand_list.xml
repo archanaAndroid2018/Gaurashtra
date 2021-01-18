@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.BrandListActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/brandimg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llmain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/low_height"
+        android:layout_gravity="center"
+        android:background="@color/light_gray"
+        android:gravity="center">
+
+        <!--app:tabMode="scrollable"-->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@android:color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            app:tabGravity="fill"
+            app:tabBackground="@drawable/tab_back_sel"
+            style="@style/Base.Widget.Design.TabLayout"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabMode="scrollable"
+            app:tabPadding="@dimen/margin5"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextAppearance="@style/MyCustomTabText"
+            app:tabTextColor="@color/light_black" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/llmain"
+        android:nestedScrollingEnabled="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvbrandList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

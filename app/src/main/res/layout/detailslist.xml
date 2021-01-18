@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@color/graylight">
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/Image"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/always"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/Text_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:textStyle="bold"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_mid"
+                android:text="ALWAYS AUTHENTIC"/>
+
+            <TextView
+                android:id="@+id/Text_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/morelightblack"
+                android:textSize="@dimen/text_size_mini"
+                android:text="We only sell 100% authentic products"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

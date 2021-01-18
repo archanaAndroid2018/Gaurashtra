@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVideo"
+        android:layout_below="@+id/rvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin5"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/padding10"
+        card_view:cardCornerRadius="@dimen/corner_radius"
+        card_view:cardElevation="@dimen/elevation"
+        card_view:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:id="@+id/main_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:gravity="top|left"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_weight="1.3">
+
+                <RadioButton
+                    android:id="@+id/radio_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_weight="0.4"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin10"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_def_address_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(Default Address)"
+                    android:textColor="@color/conticolor"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tvFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_mid"
+                    android:text="Anil Singh"
+                    android:textColor="@color/light_black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_low"
+                    android:text="Verbose Complex, SA Shakarpur Khas, Delhi-110099, India"
+                    android:textColor="@color/textcolor1"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_low"
+                    android:text="+91 9821177684"
+                    android:textColor="@color/textcolor1"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin10"
+                android:paddingBottom="@dimen/margin10"
+                android:layout_weight="1.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_edit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_low"
+                    android:text="Edit"
+                    android:layout_marginBottom="@dimen/margin10"
+                    android:gravity="left"
+                    android:textColor="@color/skyblue"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/Text_Delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_low"
+                    android:text="Delete"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_below="@+id/tv_edit_address"
+                    android:textColor="@color/skyblue"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

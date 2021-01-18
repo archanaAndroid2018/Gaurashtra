@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:tag="header"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:elevation="@dimen/height20"
+        android:layout_marginLeft="@dimen/height20"
+        android:layout_marginRight="@dimen/height20"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center|left"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_icon"/>
+
+
+    <TextView
+        android:id="@+id/tvuname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center|right"
+        android:gravity="center"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/height30"
+    android:layout_marginLeft="@dimen/height30"
+    android:layout_marginTop="@dimen/margin10"
+    android:layout_marginBottom="@dimen/margin10">
+    <TextView
+        android:id="@+id/tv_nav_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_outline_box"
+        android:text="LogIn"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:paddingBottom="@dimen/margin5"
+        android:paddingTop="@dimen/margin5"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingRight="@dimen/margin10"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_nav_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_outline_box"
+        android:text="SignUp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:paddingBottom="@dimen/margin5"
+        android:paddingTop="@dimen/margin5"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingRight="@dimen/margin10"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+</LinearLayout>

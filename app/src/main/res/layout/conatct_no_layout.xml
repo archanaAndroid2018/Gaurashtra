@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:layout_marginRight="@dimen/height30"
+    android:layout_marginLeft="@dimen/height30"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/nav"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shine_over_red"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/height30"
+            android:paddingTop="@dimen/height30"
+            android:paddingRight="@dimen/height30">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add a phone number"
+                android:textStyle="bold"
+                android:textAppearance="@style/AppTheme.NoActionBar"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/height20"
+                android:layout_marginBottom="@dimen/margin10"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1.3"
+                    android:padding="@dimen/dimen_5dp"
+                    android:background="@color/amount_bg"
+                    android:src="@mipmap/smartphone"
+                    android:tint="@color/dark_yellow" />
+
+                <LinearLayout
+                    android:layout_width="2dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:background="@drawable/yellowbg" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="@dimen/margin5" />
+
+                <TextView
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:background="@color/light_red"
+                    android:gravity="center"
+                    android:text="OK"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:gravity="center"
+                android:lines="2"
+                android:text=""
+                android:textColor="@color/cb_errorRed" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

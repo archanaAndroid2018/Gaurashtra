@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "113779175583",
+    "firebase_url": "https://gaurashtraandroi-1547287557356.firebaseio.com",
+    "project_id": "gaurashtraandroi-1547287557356",
+    "storage_bucket": "gaurashtraandroi-1547287557356.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113779175583:android:adc797824ede487b76f2aa",
+        "android_client_info": {
+          "package_name": "com.gaurashtra.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113779175583-18vmecboku497inle2b1ukim19hcdj6i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaurashtra.app",
+            "certificate_hash": "b91f143ce74e02262c102759dbb61b4640d34105"
+          }
+        },
+        {
+          "client_id": "113779175583-peut9f43bsfqkedtdjltv1v7b7lapka6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbCuLEA_tz9vPUwz9rxKxopdukGXeUQKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113779175583-peut9f43bsfqkedtdjltv1v7b7lapka6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

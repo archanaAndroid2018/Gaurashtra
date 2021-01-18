@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
+            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
             "map": [
                 {
                     "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\8f431df2a49f4869f396935837f7942f\\core-1.1.0\\res\\values-en-rAU\\values-en-rAU.xml",

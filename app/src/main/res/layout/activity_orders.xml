@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:orientation="vertical"
+    tools:context=".view.activity.OrdersActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvOrder"/>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/Linear_Image"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_no_order"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/cards_number_textColor"
+            android:text="Oops! There is no order."
+            />
+        <TextView
+            android:id="@+id/tv_btn_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingRight="@dimen/height30"
+            android:paddingLeft="@dimen/height30"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:text="Continue Shopping"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dimen_18sp"
+            android:background="@drawable/blue_outline_box"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

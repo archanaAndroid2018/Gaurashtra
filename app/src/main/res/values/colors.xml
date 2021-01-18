@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#416475</color>
+    <color name="colorPrimaryDark">#344358</color>
+    <color name="colorAccent">#436879</color>
+
+    <color name="light_black">#2d2d2d</color>
+    <color name="morelightblack">#757575</color>
+    <color name="mid_black">#757575</color>
+    <color name="light_red">#f55516</color>
+    <color name="gray">#c1c1c1</color>
+    <color name="skyblue">#6495ed</color>
+    <color name="home_bg">#e8f1f9</color>
+    <color name="dark_yellow">#f3a00c</color>
+    <color name="cardbg">#f0f0f0</color>
+    <color name="amount_bg">#e1f2c4</color>
+    <color name="light_gray">#eaeaea</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#32CD32</color>
+    <color name="bigbang">#23577d</color>
+    <color name="white_40">#64FFFFFF</color>
+    <color name="statuscolor">#3E4C75</color>
+    <color name="review_box">#e4ebfb</color>
+    <color name="graylight">#f3f1fb</color>
+    <color name="textcolor1">#707d84</color>
+    <color name="spinner">#fafafa</color>
+    <color name="relatedproduct">#fdeaed</color>
+    <color name="brandList">#e7f0f2</color>
+    <color name="conticolor">#dcd8ea</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="light_bg">#E9F0F6</color>
+</resources>

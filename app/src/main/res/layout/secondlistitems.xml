@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/medium_height"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Linera"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="@dimen/width70"
+            android:layout_height="@dimen/width70"
+            android:padding="@dimen/margin5"
+            android:layout_gravity="center"
+            android:src="@mipmap/fooditems"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tvMerchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_black"
+            android:text="Food Items"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_low"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

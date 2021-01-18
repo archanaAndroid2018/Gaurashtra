@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v22\\values-large-v22.xml",
+            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v22\\values-large-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\76a27022645bdbe2ccddaa4eedbb34a4\\jetified-payu-custom-browser-7.5.1\\res\\values-large-v22\\values-large-v22.xml",
+                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\139404cd245d90b501568d8053918ee4\\jetified-payu-custom-browser-7.5.1\\res\\values-large-v22\\values-large-v22.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

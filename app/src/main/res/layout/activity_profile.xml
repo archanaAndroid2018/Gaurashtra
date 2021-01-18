@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginBottom="@dimen/margin10"
+        android:background="@drawable/addressbox"
+        android:layout_margin="@dimen/margin10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:padding="@dimen/padding10"
+            android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="@dimen/height20"
+               android:layout_height="@dimen/height20"
+               android:src="@mipmap/profileuser"
+               android:scaleType="fitXY"
+               android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_profile_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                android:maxLength="28"
+                android:maxLines="1"
+                android:inputType="textCapSentences"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_mid"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="@dimen/margin10"/>
+
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_fname_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name should not be empty!"
+            android:layout_marginLeft="@dimen/height40"
+            android:textColor="@color/red"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/margin10"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:padding="@dimen/padding10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/height20"
+                android:layout_height="@dimen/height20"
+                android:src="@mipmap/profileuser"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_profile_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last name"
+                android:maxLength="28"
+                android:maxLines="1"
+                android:inputType="textCapSentences"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_mid"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="@dimen/margin10"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_lname_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name should not be empty!"
+            android:layout_marginLeft="@dimen/height40"
+            android:textColor="@color/red"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/margin10"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:padding="@dimen/padding10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/height20"
+                android:layout_height="15dp"
+                android:src="@mipmap/profilemale"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email id"
+                android:maxLength="68"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_mid"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="@dimen/margin10"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_email_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email should not be empty!"
+            android:layout_marginLeft="@dimen/height40"
+            android:textColor="@color/red"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/margin10"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:padding="@dimen/padding10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/height20"
+                android:layout_height="@dimen/height20"
+                android:src="@mipmap/smartphone"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_profile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact no."
+                android:inputType="phone"
+                android:maxLines="1"
+                android:maxLength="13"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_mid"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="@dimen/margin10"/>
+
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_phone_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone number should not be empty!"
+            android:layout_marginLeft="@dimen/height40"
+            android:textColor="@color/red"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/margin10"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginBottom="@dimen/margin10"
+        android:padding="@dimen/padding10"
+        android:background="@drawable/addressbox"
+        android:layout_margin="@dimen/margin10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height120"
+            android:layout_marginTop="@dimen/margin5"
+            android:padding="@dimen/padding10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/height20"
+                android:layout_height="@dimen/height20"
+                android:src="@mipmap/address_2"
+                android:scaleType="fitXY"
+                android:layout_gravity="top|center"/>
+
+            <TextView
+                android:id="@+id/tv_profile_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapSentences|textMultiLine"
+                android:text="Address "
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_mid"
+                android:layout_gravity="top|left"
+                android:gravity="top|left"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin5"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_no_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You haven't added any address yet!"
+                    android:textColor="@color/textcolor1"
+                    android:gravity="top|center"/>
+                <TextView
+                    android:id="@+id/tv_btn_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height20"
+                    android:text="+ Add an address"
+                    android:layout_gravity="center"
+                    android:paddingBottom="@dimen/margin5"
+                    android:paddingTop="@dimen/margin5"
+                    android:paddingLeft="@dimen/height20"
+                    android:paddingRight="@dimen/height20"
+                    android:background="@drawable/blue_bg_outline"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttion_height"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin50"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:background="@drawable/custom_button">
+
+        <TextView
+            android:id="@+id/tv_btn_profile_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Save Changes"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_mid"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.ChangePassActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginBottom="@dimen/margin10"
+        android:background="@drawable/addressbox"
+        android:layout_margin="@dimen/margin10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:padding="@dimen/padding10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/width30"
+                android:layout_height="@dimen/height12"
+                android:src="@mipmap/passicon"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/etOldPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Current Password"
+                android:maxLength="28"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_mid"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="@dimen/margin10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/margin10"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:padding="@dimen/padding10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/width30"
+                android:layout_height="@dimen/height12"
+                android:src="@mipmap/passicon"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/etChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New Password"
+                android:maxLength="68"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_mid"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="@dimen/margin10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/margin10"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:padding="@dimen/padding10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/width30"
+                android:layout_height="@dimen/height12"
+                android:src="@mipmap/passicon"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/etConfChangePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm New Password"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="28"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_mid"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="@dimen/margin10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/margin10"></LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llChangePass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttion_height"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin50"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:background="@drawable/custom_button">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Save Changes"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_mid"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

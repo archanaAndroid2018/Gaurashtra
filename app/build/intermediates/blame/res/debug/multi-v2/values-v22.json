@@ -1,21 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
+            "outputFile": "C:\\Users\\abc\\AndroidStudioProjects\\NewGaurashtra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\7c54f9cbc7613c04d2439059be46c3f0\\appcompat-1.1.0\\res\\values-v22\\values-v22.xml",
-                    "from": {
-                        "startLines": "2,3,4,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,553",
-                        "endLines": "2,3,8,13",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,548,896"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\76a27022645bdbe2ccddaa4eedbb34a4\\jetified-payu-custom-browser-7.5.1\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\139404cd245d90b501568d8053918ee4\\jetified-payu-custom-browser-7.5.1\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -31,6 +20,17 @@
                         "endLines": "14,17",
                         "endColumns": "92,12",
                         "endOffsets": "989,1156"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-2\\files-2.1\\7c54f9cbc7613c04d2439059be46c3f0\\appcompat-1.1.0\\res\\values-v22\\values-v22.xml",
+                    "from": {
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,553",
+                        "endLines": "2,3,8,13",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,548,896"
                     }
                 }
             ]

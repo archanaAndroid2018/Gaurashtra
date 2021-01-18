@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.AllReviewsActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:background="@drawable/nav"
+        android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/ibtn_back"
+        android:layout_width="@dimen/height40"
+        android:layout_height="@dimen/height40"
+        android:src="@drawable/img_back_arrow"
+        android:background="@color/transparent"
+        android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:layout_marginLeft="@dimen/height30"
+            android:textStyle="bold"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_all_reviews"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin10"
+    android:paddingBottom="@dimen/margin10">
+
+</androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
