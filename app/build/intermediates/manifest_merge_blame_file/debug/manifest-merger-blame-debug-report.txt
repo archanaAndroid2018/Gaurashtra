@@ -1,0 +1,930 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.gaurashtra.app"
+4    android:versionCode="14"
+5    android:versionName="14.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+8-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:8:5-81
+13-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:8:22-78
+14    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+14-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:9:5-71
+14-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:9:22-68
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:10:5-80
+15-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Require below permissions for reading sms and otp assist feature -->
+16-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:13:5-76
+16-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:13:22-73
+17    <!--
+18    <uses-permission android:name="android.permission.READ_SMS" />
+19    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+20    -->
+21    <uses-feature
+21-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:24:5-26:36
+22        android:name="android.hardware.telephony"
+22-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:25:9-50
+23        android:required="false" />
+23-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:26:9-33
+24
+25    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+25-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0a5bbda15f45c7373cd350d3fec56115\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:24:5-68
+25-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0a5bbda15f45c7373cd350d3fec56115\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:24:22-65
+26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+26-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:26:5-82
+26-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:26:22-79
+27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Permission will be merged into the manifest of the hosting app. -->
+27-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:26:5-110
+27-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:26:22-107
+28    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
+29    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+29-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:8:3-74
+29-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:8:20-72
+30    <uses-permission android:name="android.permission.CAMERA" />
+30-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:9:5-65
+30-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:9:22-62
+31    <uses-permission android:name="android.permission.VIBRATE" />
+31-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:10:5-66
+31-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:10:22-63
+32
+33    <uses-feature
+33-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:12:5-14:36
+34        android:name="android.hardware.camera"
+34-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:13:9-47
+35        android:required="false" />
+35-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:14:9-33
+36    <uses-feature
+36-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:15:5-17:36
+37        android:name="android.hardware.camera.autofocus"
+37-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:16:9-57
+38        android:required="false" />
+38-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
+39
+40    <application
+40-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:12:5-184:19
+41        android:name="androidx.multidex.MultiDexApplication"
+42        android:allowBackup="false"
+42-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:13:9-36
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.1.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8f431df2a49f4869f396935837f7942f\core-1.1.0\AndroidManifest.xml:24:18-86
+44        android:debuggable="true"
+45        android:hardwareAccelerated="true"
+45-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:14:9-43
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:15:9-43
+47        android:label="@string/app_name"
+47-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:16:9-41
+48        android:largeHeap="true"
+48-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:17:9-33
+49        android:networkSecurityConfig="@xml/network_security_config"
+49-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:18:9-69
+50        android:supportsRtl="true"
+50-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:19:9-35
+51        android:testOnly="true"
+52        android:theme="@style/AppTheme"
+52-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:20:9-40
+53        android:usesCleartextTraffic="false"
+53-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\76a27022645bdbe2ccddaa4eedbb34a4\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:17:18-54
+54        android:windowSoftInputMode="adjustPan" >
+54-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:30:9-48
+55        <activity android:name="com.gaurashtra.app.view.activity.WalletActivity" />
+55-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:21:9-75
+55-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:21:19-63
+56        <activity android:name="com.gaurashtra.app.view.activity.ThankyouActivity" />
+56-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:22:9-68
+56-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:22:19-65
+57        <activity android:name="com.gaurashtra.app.view.activity.ContactUsActivity" />
+57-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:23:9-69
+57-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:23:19-66
+58
+59        <service
+59-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:25:9-29:45
+60            android:name="com.gaurashtra.app.Utils.UserUpdate"
+60-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:26:13-45
+61            android:enabled="true"
+61-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:27:13-35
+62            android:exported="true" />
+62-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:28:13-36
+63
+64        <activity
+64-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:31:9-33:58
+65            android:name="com.gaurashtra.app.view.activity.AddressFormActivity"
+65-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:32:13-62
+66            android:windowSoftInputMode="adjustResize" />
+66-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:33:13-55
+67        <activity
+67-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:34:9-36:57
+68            android:name="com.gaurashtra.app.view.activity.OptionsActivity"
+68-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:35:13-58
+69            android:windowSoftInputMode="stateHidden" />
+69-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:36:13-54
+70        <activity
+70-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:37:9-39:59
+71            android:name="com.gaurashtra.app.view.activity.AllReviewsActivity"
+71-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:38:13-61
+72            android:theme="@style/AppTheme.NoActionBar" />
+72-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:39:13-56
+73        <activity android:name="com.gaurashtra.app.view.activity.PaymentPayUmoneyActivity" />
+73-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:40:9-76
+73-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:40:19-73
+74        <activity android:name="com.gaurashtra.app.view.activity.MyReviewsActivity" />
+74-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:41:9-69
+74-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:41:19-66
+75        <activity
+75-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:42:9-44:58
+76            android:name="com.gaurashtra.app.view.activity.SearchProductActivity"
+76-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:43:13-64
+77            android:windowSoftInputMode="stateVisible" />
+77-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:44:13-55
+78
+79        <meta-data
+79-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:46:9-48:50
+80            android:name="com.razorpay.ApiKey"
+80-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:47:13-47
+81            android:value="@string/rzp_apikey" />
+81-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:48:13-47
+82        <meta-data
+82-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:49:9-51:55
+83            android:name="com.facebook.sdk.ApplicationId"
+83-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:50:13-58
+84            android:value="@string/facebook_app_id" />
+84-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:51:13-52
+85
+86        <activity
+86-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:53:9-56:48
+87            android:name="com.facebook.FacebookActivity"
+87-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:54:13-57
+88            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+88-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:55:13-96
+89            android:label="@string/app_name"
+89-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:56:13-45
+90            android:theme="@style/com_facebook_activity_theme" />
+90-->[com.facebook.android:facebook-common:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8216787e2b5c1d43863d8112a87a4a0e\jetified-facebook-common-5.12.1\AndroidManifest.xml:32:13-63
+91        <activity
+91-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:57:9-68:20
+92            android:name="com.facebook.CustomTabActivity"
+92-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:58:13-58
+93            android:exported="true" >
+93-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:59:13-36
+94            <intent-filter>
+94-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:60:13-67:29
+95                <action android:name="android.intent.action.VIEW" />
+95-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:17-69
+95-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:25-66
+96
+97                <category android:name="android.intent.category.DEFAULT" />
+97-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:17-76
+97-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:27-73
+98                <category android:name="android.intent.category.BROWSABLE" />
+98-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:17-78
+98-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:27-75
+99
+100                <data android:scheme="@string/fb_login_protocol_scheme" />
+100-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:17-75
+100-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:23-72
+101            </intent-filter>
+102        </activity>
+103        <activity
+103-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:69:9-72:52
+104            android:name="com.paytm.pgsdk.PaytmPGActivity"
+104-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:70:13-59
+105            android:configChanges="keyboardHidden|orientation|keyboard"
+105-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:71:13-72
+106            android:screenOrientation="portrait"
+106-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:72:13-49
+107            android:theme="@style/AppTheme" />
+107-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:17:13-44
+108        <activity
+108-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:73:9-76:67
+109            android:name="com.gaurashtra.app.view.activity.ProductByBrand"
+109-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:74:13-57
+110            android:screenOrientation="portrait"
+110-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:75:13-49
+111            android:windowSoftInputMode="adjustPan|stateHidden" />
+111-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:76:13-64
+112        <activity android:name="com.gaurashtra.app.view.activity.AskQuestionActivity" />
+112-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:77:9-71
+112-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:77:19-68
+113        <activity
+113-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:78:9-86:20
+114            android:name="com.gaurashtra.app.view.activity.SplashActivity"
+114-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:79:13-57
+115            android:theme="@style/AppTheme.NoActionBar" >
+115-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:80:13-56
+116            <intent-filter>
+116-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:81:13-85:29
+117                <action android:name="android.intent.action.MAIN" />
+117-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:82:17-69
+117-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:82:25-66
+118
+119                <category android:name="android.intent.category.LAUNCHER" />
+119-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:84:17-77
+119-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:84:27-74
+120            </intent-filter>
+121        </activity>
+122        <activity android:name="com.gaurashtra.app.view.base.ParentActivity" />
+122-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:87:9-62
+122-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:87:19-59
+123        <activity
+123-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:88:9-91:58
+124            android:name="com.gaurashtra.app.view.activity.RegisterActivity"
+124-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:89:13-59
+125            android:theme="@style/AppTheme.NoActionBar"
+125-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:90:13-56
+126            android:windowSoftInputMode="adjustResize" />
+126-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:91:13-55
+127        <activity
+127-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:92:9-95:59
+128            android:name="com.gaurashtra.app.view.activity.LoginActivity"
+128-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:93:13-56
+129            android:theme="@style/AppTheme.NoActionBar"
+129-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:94:13-56
+130            android:windowSoftInputMode="adjustNothing" />
+130-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:95:13-56
+131        <activity
+131-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:96:9-99:59
+132            android:name="com.gaurashtra.app.view.activity.ForgotActivity"
+132-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:97:13-57
+133            android:theme="@style/AppTheme.NoActionBar"
+133-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:98:13-56
+134            android:windowSoftInputMode="adjustNothing" />
+134-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:99:13-56
+135        <activity
+135-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:100:9-104:81
+136            android:name="com.gaurashtra.app.view.activity.HomeActivity"
+136-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:101:13-55
+137            android:configChanges="orientation|keyboardHidden|screenSize"
+137-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:102:13-74
+138            android:screenOrientation="portrait"
+138-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:103:13-49
+139            android:windowSoftInputMode="stateVisible|adjustPan|adjustResize" />
+139-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:104:13-78
+140        <activity
+140-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:105:9-108:68
+141            android:name="com.gaurashtra.app.view.activity.ProductListActivity"
+141-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:106:13-62
+142            android:screenOrientation="portrait"
+142-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:107:13-49
+143            android:windowSoftInputMode="adjustPan|adjustResize" />
+143-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:108:13-65
+144        <activity
+144-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:109:9-150:20
+145            android:name="com.gaurashtra.app.view.activity.ProductDetailActivity"
+145-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:110:13-64
+146            android:launchMode="singleTask"
+146-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:111:13-44
+147            android:windowSoftInputMode="adjustPan|adjustResize" >
+147-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:112:13-65
+148            <intent-filter>
+148-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:113:13-115:29
+149                <category android:name="android.intent.category.LAUNCHER" />
+149-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:84:17-77
+149-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:84:27-74
+150            </intent-filter>
+151            <!-- Branch URI scheme -->
+152            <intent-filter>
+152-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:117:13-126:29
+153                <data
+153-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:17-75
+154                    android:host="www.gaurashtra.com/"
+154-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:119:21-55
+155                    android:scheme="http" />
+155-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:23-72
+156
+157                <action android:name="android.intent.action.VIEW" />
+157-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:17-69
+157-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:25-66
+158
+159                <category android:name="android.intent.category.DEFAULT" />
+159-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:17-76
+159-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:27-73
+160                <category android:name="android.intent.category.BROWSABLE" />
+160-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:17-78
+160-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:27-75
+161            </intent-filter>
+162            <intent-filter>
+162-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:127:13-136:29
+163                <data
+163-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:17-75
+164                    android:host="www.gaurashtra.com/"
+164-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:119:21-55
+165                    android:scheme="https" />
+165-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:23-72
+166
+167                <action android:name="android.intent.action.VIEW" />
+167-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:17-69
+167-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:25-66
+168
+169                <category android:name="android.intent.category.DEFAULT" />
+169-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:17-76
+169-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:27-73
+170                <category android:name="android.intent.category.BROWSABLE" />
+170-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:17-78
+170-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:27-75
+171            </intent-filter>
+172            <!-- <intent-filter> -->
+173            <!-- <data -->
+174            <!-- android:host="open" -->
+175            <!-- android:pathPattern="product" -->
+176            <!-- android:scheme="app" /> -->
+177
+178
+179            <!-- <action android:name="android.intent.action.VIEW" /> -->
+180
+181
+182            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+183            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+184            <!-- </intent-filter> -->
+185        </activity> <!-- Branch init -->
+186        <!-- <meta-data -->
+187        <!-- android:name="io.branch.sdk.BranchKey" -->
+188        <!-- android:value="key_live_gkJKLudII0NzV5o0mSFs5jomAvn78MMx" /> &lt;!&ndash; Branch testing (TestMode "true" to simulate fresh installs on dev environment) &ndash;&gt; -->
+189        <!-- <meta-data -->
+190        <!-- android:name="io.branch.sdk.TestMode" -->
+191        <!-- android:value="false" /> -->
+192        <activity android:name="com.gaurashtra.app.view.activity.BrandActivity" />
+192-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:157:9-65
+192-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:157:19-62
+193        <activity
+193-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:158:9-160:57
+194            android:name="com.gaurashtra.app.view.activity.BrandListActivity"
+194-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:159:13-60
+195            android:windowSoftInputMode="stateHidden" />
+195-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:160:13-54
+196        <activity android:name="com.gaurashtra.app.view.activity.CartActivity" />
+196-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:161:9-64
+196-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:161:19-61
+197        <activity android:name="com.gaurashtra.app.view.activity.DelieveryAddressActivity" />
+197-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:162:9-76
+197-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:162:19-73
+198        <activity android:name="com.gaurashtra.app.view.activity.ConfirmOrderActivity" />
+198-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:163:9-72
+198-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:163:19-69
+199        <activity android:name="com.gaurashtra.app.view.activity.PaymentMethodActivity" />
+199-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:164:9-73
+199-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:164:19-70
+200        <activity android:name="com.gaurashtra.app.view.activity.ProfileActivity" />
+200-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:165:9-67
+200-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:165:19-64
+201        <activity android:name="com.gaurashtra.app.view.activity.AddressActivity" />
+201-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:166:9-67
+201-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:166:19-64
+202        <activity android:name="com.gaurashtra.app.view.activity.OrdersActivity" />
+202-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:167:9-66
+202-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:167:19-63
+203        <activity android:name="com.gaurashtra.app.view.activity.WishListActivity" />
+203-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:168:9-68
+203-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:168:19-65
+204        <activity android:name="com.gaurashtra.app.view.activity.ChangePassActivity" />
+204-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:169:9-70
+204-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:169:19-67
+205        <activity android:name="com.gaurashtra.app.view.activity.OrderDetailActivity" />
+205-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:170:9-71
+205-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:170:19-68
+206        <activity
+206-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:171:9-174:59
+207            android:name="com.gaurashtra.app.view.activity.ResetPasswordActivity"
+207-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:172:13-64
+208            android:theme="@style/AppTheme.NoActionBar"
+208-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:173:13-56
+209            android:windowSoftInputMode="adjustNothing" />
+209-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:174:13-56
+210        <activity android:name="com.gaurashtra.app.view.activity.NotificationActivity" />
+210-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:175:9-72
+210-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:175:19-69
+211
+212        <service
+212-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:177:9-183:19
+213            android:name="com.gaurashtra.app.Utils.FirebaseMessagingService"
+213-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:178:13-59
+214            android:stopWithTask="false" >
+214-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:179:13-41
+215            <intent-filter>
+215-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:180:13-182:29
+216                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+216-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:181:17-78
+216-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:181:25-75
+217            </intent-filter>
+218        </service>
+219
+220        <activity
+220-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:19:9-24:55
+221            android:name="com.payumoney.sdkui.ui.activities.PayUmoneyActivity"
+221-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:20:13-79
+222            android:label="@string/title_activity_citrus"
+222-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:21:13-58
+223            android:screenOrientation="portrait"
+223-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:22:13-49
+224            android:theme="@style/PayumoneyAppTheme"
+224-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:23:13-53
+225            android:windowSoftInputMode="adjustPan" />
+225-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:24:13-52
+226        <activity
+226-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:25:9-28:56
+227            android:name="com.payumoney.sdkui.ui.activities.ReviewOrderActivity"
+227-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:26:13-81
+228            android:screenOrientation="portrait"
+228-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:27:13-49
+229            android:theme="@style/PayumoneyAppTheme" />
+229-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1a3c0e61971b7dceb272b97a624f914d\jetified-plug-n-play-1.6.0\AndroidManifest.xml:28:13-53
+230        <activity
+230-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:31:9-34:72
+231            android:name="com.payumoney.core.SdkWebViewActivityNew"
+231-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:32:13-68
+232            android:screenOrientation="portrait"
+232-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:33:13-49
+233            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+233-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:34:13-69
+234        <activity
+234-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:35:9-40:59
+235            android:name="com.payu.custombrowser.CBActivity"
+235-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:36:13-61
+236            android:screenOrientation="portrait"
+236-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:37:13-49
+237            android:theme="@style/Theme.AppCompat"
+237-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:38:13-51
+238            android:windowSoftInputMode="stateAlwaysHidden" />
+238-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\71058d923a85b396f9065d71ae985c1a\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:39:13-60
+239        <activity android:name="com.facebook.CustomTabMainActivity" />
+239-->[com.facebook.android:facebook-common:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8216787e2b5c1d43863d8112a87a4a0e\jetified-facebook-common-5.12.1\AndroidManifest.xml:33:9-71
+239-->[com.facebook.android:facebook-common:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8216787e2b5c1d43863d8112a87a4a0e\jetified-facebook-common-5.12.1\AndroidManifest.xml:33:19-68
+240
+241        <service android:name="com.payu.custombrowser.services.SnoozeService" />
+241-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\76a27022645bdbe2ccddaa4eedbb34a4\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:23:9-81
+241-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\76a27022645bdbe2ccddaa4eedbb34a4\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:23:18-78
+242
+243        <activity android:name="com.payu.custombrowser.PreLollipopPaymentsActivity" >
+243-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\76a27022645bdbe2ccddaa4eedbb34a4\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:25:9-42:20
+243-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\76a27022645bdbe2ccddaa4eedbb34a4\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:25:19-84
+244            <intent-filter>
+244-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\76a27022645bdbe2ccddaa4eedbb34a4\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:26:13-33:29
+245                <data android:scheme="com.gaurashtra.app.success" />
+245-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:17-75
+245-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:23-72
+246
+247                <action android:name="android.intent.action.VIEW" />
+247-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:17-69
+247-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:25-66
+248
+249                <category android:name="android.intent.category.DEFAULT" />
+249-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:17-76
+249-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:27-73
+250                <category android:name="android.intent.category.BROWSABLE" />
+250-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:17-78
+250-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:27-75
+251            </intent-filter>
+252            <intent-filter>
+252-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\76a27022645bdbe2ccddaa4eedbb34a4\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:34:13-41:29
+253                <data android:scheme="com.gaurashtra.app.failure" />
+253-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:17-75
+253-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:23-72
+254
+255                <action android:name="android.intent.action.VIEW" />
+255-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:17-69
+255-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:61:25-66
+256
+257                <category android:name="android.intent.category.DEFAULT" />
+257-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:17-76
+257-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:63:27-73
+258                <category android:name="android.intent.category.BROWSABLE" />
+258-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:17-78
+258-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:64:27-75
+259            </intent-filter>
+260        </activity>
+261        <activity android:name="com.payu.custombrowser.PrePaymentsActivity" />
+261-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\76a27022645bdbe2ccddaa4eedbb34a4\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:43:9-79
+261-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\76a27022645bdbe2ccddaa4eedbb34a4\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:43:19-76
+262        <activity
+262-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\323124563906b4630cc45641466e19ba\jetified-upisdk-1.0.2\AndroidManifest.xml:14:9-17:63
+263            android:name="com.payu.upisdk.upiintent.PaymentResponseUpiSdkActivity"
+263-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\323124563906b4630cc45641466e19ba\jetified-upisdk-1.0.2\AndroidManifest.xml:15:13-83
+264            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"
+264-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\323124563906b4630cc45641466e19ba\jetified-upisdk-1.0.2\AndroidManifest.xml:16:13-75
+265            android:windowSoftInputMode="stateAlwaysHidden" />
+265-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\323124563906b4630cc45641466e19ba\jetified-upisdk-1.0.2\AndroidManifest.xml:17:13-60
+266
+267        <service
+267-->[com.google.firebase:firebase-crashlytics:17.2.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\6326fccc851185323b8485a0941742c3\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:13:9-19:19
+268            android:name="com.google.firebase.components.ComponentDiscoveryService"
+268-->[com.google.firebase:firebase-crashlytics:17.2.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\6326fccc851185323b8485a0941742c3\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:14:13-84
+269            android:directBootAware="true"
+269-->[com.google.firebase:firebase-common:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e4289223d005f823fa596c91faaf983f\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
+270            android:exported="false" >
+270-->[com.google.firebase:firebase-crashlytics:17.2.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\6326fccc851185323b8485a0941742c3\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:15:13-37
+271            <meta-data
+271-->[com.google.firebase:firebase-crashlytics:17.2.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\6326fccc851185323b8485a0941742c3\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:16:13-18:85
+272                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+272-->[com.google.firebase:firebase-crashlytics:17.2.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\6326fccc851185323b8485a0941742c3\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:17:17-115
+273                android:value="com.google.firebase.components.ComponentRegistrar" />
+273-->[com.google.firebase:firebase-crashlytics:17.2.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\6326fccc851185323b8485a0941742c3\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:18:17-82
+274            <meta-data
+274-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:36:13-38:85
+275                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+275-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:37:17-109
+276                android:value="com.google.firebase.components.ComponentRegistrar" />
+276-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:38:17-82
+277            <meta-data
+277-->[com.google.firebase:firebase-messaging:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\38ee8c616f0b6fe6e919f532a81a9d67\jetified-firebase-messaging-20.2.2\AndroidManifest.xml:39:13-41:85
+278                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+278-->[com.google.firebase:firebase-messaging:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\38ee8c616f0b6fe6e919f532a81a9d67\jetified-firebase-messaging-20.2.2\AndroidManifest.xml:40:17-119
+279                android:value="com.google.firebase.components.ComponentRegistrar" />
+279-->[com.google.firebase:firebase-messaging:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\38ee8c616f0b6fe6e919f532a81a9d67\jetified-firebase-messaging-20.2.2\AndroidManifest.xml:41:17-82
+280            <meta-data
+280-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0a5bbda15f45c7373cd350d3fec56115\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:30:13-32:85
+281                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+281-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0a5bbda15f45c7373cd350d3fec56115\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:31:17-139
+282                android:value="com.google.firebase.components.ComponentRegistrar" />
+282-->[com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0a5bbda15f45c7373cd350d3fec56115\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:32:17-82
+283            <meta-data
+283-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:32:13-34:85
+284                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+284-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:33:17-96
+285                android:value="com.google.firebase.components.ComponentRegistrar" />
+285-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:34:17-82
+286            <meta-data
+286-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\294ab45c1610c1df96d7821c005bcbc0\jetified-firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+287                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+287-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\294ab45c1610c1df96d7821c005bcbc0\jetified-firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+288                android:value="com.google.firebase.components.ComponentRegistrar" />
+288-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\294ab45c1610c1df96d7821c005bcbc0\jetified-firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+289            <meta-data
+289-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d028670c820c21b0dd307f3ac83aafe\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+290                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+290-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d028670c820c21b0dd307f3ac83aafe\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+291                android:value="com.google.firebase.components.ComponentRegistrar" />
+291-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d028670c820c21b0dd307f3ac83aafe\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+292        </service>
+293
+294        <activity
+294-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\de48d0e09d7e8948edb8a191c6de8d52\jetified-play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+295            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+295-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\de48d0e09d7e8948edb8a191c6de8d52\jetified-play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+296            android:excludeFromRecents="true"
+296-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\de48d0e09d7e8948edb8a191c6de8d52\jetified-play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+297            android:exported="false"
+297-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\de48d0e09d7e8948edb8a191c6de8d52\jetified-play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+298            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+298-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\de48d0e09d7e8948edb8a191c6de8d52\jetified-play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+299        <!--
+300            Service handling Google Sign-In user revocation. For apps that do not integrate with
+301            Google Sign-In, this service will never be started.
+302        -->
+303        <service
+303-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\de48d0e09d7e8948edb8a191c6de8d52\jetified-play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+304            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+304-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\de48d0e09d7e8948edb8a191c6de8d52\jetified-play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+305            android:exported="true"
+305-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\de48d0e09d7e8948edb8a191c6de8d52\jetified-play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+306            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+306-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\de48d0e09d7e8948edb8a191c6de8d52\jetified-play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+307
+308        <activity
+308-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:24:9-31:50
+309            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+309-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:25:13-85
+310            android:excludeFromRecents="true"
+310-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:26:13-46
+311            android:exported="true"
+311-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:27:13-36
+312            android:launchMode="singleTask"
+312-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:28:13-44
+313            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+313-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:29:13-102
+314            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+314-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9823e9c69367d1aabab604f1a2a5e52f\jetified-firebase-auth-19.3.1\AndroidManifest.xml:30:13-72
+315        <!--
+316             FirebaseMessagingService performs security checks at runtime,
+317             but set to not exported to explicitly avoid allowing another app to call it.
+318        -->
+319        <service
+319-->[com.google.firebase:firebase-messaging:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\38ee8c616f0b6fe6e919f532a81a9d67\jetified-firebase-messaging-20.2.2\AndroidManifest.xml:28:9-35:19
+320            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+320-->[com.google.firebase:firebase-messaging:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\38ee8c616f0b6fe6e919f532a81a9d67\jetified-firebase-messaging-20.2.2\AndroidManifest.xml:29:13-82
+321            android:directBootAware="true"
+321-->[com.google.firebase:firebase-messaging:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\38ee8c616f0b6fe6e919f532a81a9d67\jetified-firebase-messaging-20.2.2\AndroidManifest.xml:30:13-43
+322            android:exported="false" >
+322-->[com.google.firebase:firebase-messaging:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\38ee8c616f0b6fe6e919f532a81a9d67\jetified-firebase-messaging-20.2.2\AndroidManifest.xml:31:13-37
+323            <intent-filter android:priority="-500" >
+323-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:180:13-182:29
+324                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+324-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:181:17-78
+324-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:181:25-75
+325            </intent-filter>
+326        </service>
+327
+328        <receiver
+328-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:37:9-44:20
+329            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+329-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:38:13-78
+330            android:exported="true"
+330-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:39:13-36
+331            android:permission="com.google.android.c2dm.permission.SEND" >
+331-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:40:13-73
+332            <intent-filter>
+332-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:41:13-43:29
+333                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+333-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:42:17-81
+333-->[com.google.firebase:firebase-iid:20.2.2] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4f22670dec23435745625a617bbe641e\jetified-firebase-iid-20.2.2\AndroidManifest.xml:42:25-78
+334            </intent-filter>
+335        </receiver>
+336
+337        <provider
+337-->[com.google.firebase:firebase-common:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e4289223d005f823fa596c91faaf983f\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
+338            android:name="com.google.firebase.provider.FirebaseInitProvider"
+338-->[com.google.firebase:firebase-common:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e4289223d005f823fa596c91faaf983f\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
+339            android:authorities="com.gaurashtra.app.firebaseinitprovider"
+339-->[com.google.firebase:firebase-common:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e4289223d005f823fa596c91faaf983f\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
+340            android:directBootAware="true"
+340-->[com.google.firebase:firebase-common:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e4289223d005f823fa596c91faaf983f\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
+341            android:exported="false"
+341-->[com.google.firebase:firebase-common:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e4289223d005f823fa596c91faaf983f\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
+342            android:initOrder="100" />
+342-->[com.google.firebase:firebase-common:19.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e4289223d005f823fa596c91faaf983f\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
+343
+344        <activity
+344-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\c6754f0f72d1ab8ce1489f53412bab17\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+345            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+345-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\c6754f0f72d1ab8ce1489f53412bab17\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+346            android:exported="false"
+346-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\c6754f0f72d1ab8ce1489f53412bab17\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+347            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+347-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\c6754f0f72d1ab8ce1489f53412bab17\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+348
+349        <receiver
+349-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:29:9-33:20
+350            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+350-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:30:13-85
+351            android:enabled="true"
+351-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:31:13-35
+352            android:exported="false" >
+352-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:32:13-37
+353        </receiver>
+354
+355        <service
+355-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:35:9-38:40
+356            android:name="com.google.android.gms.measurement.AppMeasurementService"
+356-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:36:13-84
+357            android:enabled="true"
+357-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:37:13-35
+358            android:exported="false" />
+358-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:38:13-37
+359        <service
+359-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:39:9-43:72
+360            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+360-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:40:13-87
+361            android:enabled="true"
+361-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:41:13-35
+362            android:exported="false"
+362-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:42:13-37
+363            android:permission="android.permission.BIND_JOB_SERVICE" />
+363-->[com.google.android.gms:play-services-measurement:17.4.3] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\8ee3f487eb318b6edec7834557498211\jetified-play-services-measurement-17.4.3\AndroidManifest.xml:43:13-69
+364
+365        <meta-data
+365-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0420abb0658fa2314568f4fdb3c21c5c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+366            android:name="com.google.android.gms.version"
+366-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0420abb0658fa2314568f4fdb3c21c5c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+367            android:value="@integer/google_play_services_version" />
+367-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0420abb0658fa2314568f4fdb3c21c5c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+368        <!--
+369         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+370         with the application context. This config is merged in with the host app's manifest,
+371         but there can only be one provider with the same authority activated at any given
+372         point; so if the end user has two or more different apps that use Facebook SDK, only the
+373         first one will be able to use the provider. To work around this problem, we use the
+374         following placeholder in the authority to identify each host application as if it was
+375         a completely different provider.
+376        -->
+377        <provider
+377-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:39:9-42:40
+378            android:name="com.facebook.internal.FacebookInitProvider"
+378-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:40:13-70
+379            android:authorities="com.gaurashtra.app.FacebookInitProvider"
+379-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:41:13-72
+380            android:exported="false" />
+380-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:42:13-37
+381
+382        <receiver
+382-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:44:9-50:20
+383            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+383-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:45:13-86
+384            android:exported="false" >
+384-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:46:13-37
+385            <intent-filter>
+385-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:47:13-49:29
+386                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+386-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:48:17-95
+386-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:48:25-92
+387            </intent-filter>
+388        </receiver>
+389        <receiver
+389-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:51:9-58:20
+390            android:name="com.facebook.CampaignTrackingReceiver"
+390-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:52:13-65
+391            android:exported="true"
+391-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:53:13-36
+392            android:permission="android.permission.INSTALL_PACKAGES" >
+392-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:54:13-69
+393            <intent-filter>
+393-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:55:13-57:29
+394                <action android:name="com.android.vending.INSTALL_REFERRER" />
+394-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:56:17-79
+394-->[com.facebook.android:facebook-core:5.12.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\11daea1c9e91f93ae73785f3d8c69b37\jetified-facebook-core-5.12.1\AndroidManifest.xml:56:25-76
+395            </intent-filter>
+396        </receiver>
+397
+398        <service
+398-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:19:9-21:40
+399            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+399-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:20:13-73
+400            android:exported="false" />
+400-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:21:13-37
+401        <service
+401-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:22:9-24:40
+402            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+402-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:23:13-72
+403            android:exported="false" />
+403-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:24:13-37
+404        <service
+404-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:25:9-28:39
+405            android:name="com.paytm.pgsdk.easypay.utils.EasypayLoaderService"
+405-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:26:13-78
+406            android:enabled="true"
+406-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:27:13-35
+407            android:exported="true" />
+407-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:28:13-36
+408        <service
+408-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:29:9-32:39
+409            android:name="com.paytm.pgsdk.easypay.utils.AnalyticsService"
+409-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:30:13-74
+410            android:enabled="true"
+410-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:31:13-35
+411            android:exported="true" />
+411-->[com.paytm:pgplussdk:1.4.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\9fcfdafed244154fd8db93ba61cf65d1\jetified-pgplussdk-1.4.4\AndroidManifest.xml:32:13-36
+412
+413        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+413-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:9-84
+413-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:19-81
+414        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+414-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:9-90
+414-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:19-87
+415        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+415-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:9-91
+415-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:19-88
+416        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+416-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:9-82
+416-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:19-79
+417        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+417-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:9-96
+417-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:19-93
+418        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+418-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:9-97
+418-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:19-94
+419        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+419-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:9-94
+419-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:19-91
+420        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+420-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:9-97
+420-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:19-94
+421        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+421-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:9-98
+421-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:19-95
+422
+423        <service
+423-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:23:9-25:40
+424            android:name="com.paypal.android.sdk.payments.PayPalService"
+424-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:24:13-73
+425            android:exported="false" />
+425-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\03786bf7b695a2735c6bb2d8e3dd9a96\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:25:13-37
+426
+427        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+427-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:12:9-16:20
+427-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:12:19-63
+428            <intent-filter>
+428-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:13:13-15:29
+429                <action android:name="rzp.device_token.share" />
+429-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:14:17-65
+429-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:14:25-62
+430            </intent-filter>
+431        </receiver>
+432
+433        <activity
+433-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:18:9-29:20
+434            android:name="com.razorpay.CheckoutActivity"
+434-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:19:13-57
+435            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+435-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:20:13-83
+436            android:theme="@style/CheckoutTheme" >
+436-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:21:13-49
+437            <intent-filter>
+437-->[com.razorpay:checkout:1.5.13] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\1d884a43e05c31379735cb9249aa4482\jetified-checkout-1.5.13\AndroidManifest.xml:22:13-28:29
+438                <action android:name="android.intent.action.MAIN" />
+438-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:82:17-69
+438-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:82:25-66
+439
+440                <data
+440-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:17-75
+441                    android:host="rzp.io"
+441-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:119:21-55
+442                    android:scheme="io.rzp" />
+442-->C:\Users\abc\AndroidStudioProjects\NewGaurashtra\NewGaurashtra\app\src\main\AndroidManifest.xml:66:23-72
+443            </intent-filter>
+444        </activity> <!-- The activities will be merged into the manifest of the hosting app. -->
+445        <activity
+445-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:12:5-271
+446            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+446-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:12:15-102
+447            android:enabled="false"
+447-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:12:103-126
+448            android:exported="false"
+448-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:12:127-151
+449            android:launchMode="singleInstance"
+449-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:12:204-239
+450            android:process=":playcore_missing_splits_activity"
+450-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:12:152-203
+451            android:stateNotNeeded="true" />
+451-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:12:240-269
+452        <activity
+452-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:13:5-226
+453            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+453-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:13:15-95
+454            android:enabled="false"
+454-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:13:96-119
+455            android:exported="false"
+455-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:13:120-144
+456            android:stateNotNeeded="true"
+456-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:13:145-174
+457            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
+457-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:13:175-224
+458        <service
+458-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:16:5-145
+459            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+459-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:16:14-95
+460            android:enabled="false"
+460-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:16:96-119
+461            android:exported="true" />
+461-->[com.google.android.play:core:1.8.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\e76545931758c6985ccb276e1e69e8d5\jetified-core-1.8.0\AndroidManifest.xml:16:120-143
+462        <service
+462-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4867e524dda506bbf39f68b37d3e4b0b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
+463            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+463-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4867e524dda506bbf39f68b37d3e4b0b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
+464            android:exported="false" >
+464-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4867e524dda506bbf39f68b37d3e4b0b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
+465            <meta-data
+465-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4867e524dda506bbf39f68b37d3e4b0b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
+466                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+466-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4867e524dda506bbf39f68b37d3e4b0b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
+467                android:value="cct" />
+467-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\4867e524dda506bbf39f68b37d3e4b0b\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
+468        </service>
+469        <service
+469-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0f2036e7f49e5829e81dabe7265f062d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
+470            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+470-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0f2036e7f49e5829e81dabe7265f062d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
+471            android:exported="false"
+471-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0f2036e7f49e5829e81dabe7265f062d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
+472            android:permission="android.permission.BIND_JOB_SERVICE" >
+472-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0f2036e7f49e5829e81dabe7265f062d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
+473        </service>
+474
+475        <receiver
+475-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0f2036e7f49e5829e81dabe7265f062d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
+476            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+476-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0f2036e7f49e5829e81dabe7265f062d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132
+477            android:exported="false" />
+477-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\0f2036e7f49e5829e81dabe7265f062d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
+478
+479        <provider
+479-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\49ae256e1c023a7a082fa325154365c9\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+480            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+480-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\49ae256e1c023a7a082fa325154365c9\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+481            android:authorities="com.gaurashtra.app.lifecycle-process"
+481-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\49ae256e1c023a7a082fa325154365c9\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+482            android:exported="false"
+482-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\49ae256e1c023a7a082fa325154365c9\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+483            android:multiprocess="true" />
+483-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\49ae256e1c023a7a082fa325154365c9\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+484
+485        <activity
+485-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:20:9-22:66
+486            android:name="io.card.payment.CardIOActivity"
+486-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:21:13-58
+487            android:configChanges="keyboardHidden|orientation" />
+487-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:22:13-63
+488        <activity android:name="io.card.payment.DataEntryActivity" />
+488-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:9-70
+488-->[io.card:android-sdk:5.5.1] C:\Users\abc\.gradle\caches\transforms-2\files-2.1\ad506de28e24c123f148e58de01edcf9\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:19-67
+489    </application>
+490
+491</manifest>

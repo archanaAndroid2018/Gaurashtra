@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">113779175583-peut9f43bsfqkedtdjltv1v7b7lapka6.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://gaurashtraandroi-1547287557356.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">113779175583</string>
+    <string name="google_api_key" translatable="false">AIzaSyAbCuLEA_tz9vPUwz9rxKxopdukGXeUQKI</string>
+    <string name="google_app_id" translatable="false">1:113779175583:android:adc797824ede487b76f2aa</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAbCuLEA_tz9vPUwz9rxKxopdukGXeUQKI</string>
+    <string name="google_storage_bucket" translatable="false">gaurashtraandroi-1547287557356.appspot.com</string>
+    <string name="project_id" translatable="false">gaurashtraandroi-1547287557356</string>
+</resources>
